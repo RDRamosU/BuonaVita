@@ -1,0 +1,74 @@
+// imc = peso / altura * altura
+
+var botonAdicionar = document.querySelector("#adicionar-paciente");
+
+botonAdicionar.addEventListener("click", function(event){
+    event.preventDefault();
+    var form = document.querySelector("#formulario-adicionar");
+
+    var nombre = form.nombre.value;
+    var peso = form.peso.value;
+    var altura = form.altura.value;
+    var gordura = form.gordura.value;
+
+    console.log(nombre);
+    console.log(peso);
+    console.log(altura);
+    console.log(gordura);
+
+    pacienteTr = document.createElement("tr");
+    nombreTd = document.createElement("td");
+    pesoTd = document.createElement("td");
+    alturaTd = document.createElement("td");
+    gorduraTd = document.createElement("td");
+    imcTd = document.createElement("td");
+
+    nombreTd.textContent = nombre;
+    pesoTd.textContent = peso;
+    alturaTd.textContent = altura;
+    gorduraTd.textContent = gordura;
+    
+    pacienteTr.appendChild():
+
+});
+
+var pacientes = document.querySelectorAll(".paciente");
+
+for (let i = 0; i < pacientes.length; i++) {
+    
+    var paciente = pacientes[i];
+
+    var tdPeso = paciente.querySelector(".info-peso");
+    var peso = tdPeso.textContent;
+
+    var tdAltura = paciente.querySelector(".info-altura");
+    var altura = tdAltura.textContent;
+
+    var tdIMC = paciente.querySelector(".info-imc");
+    var imc = peso/(altura * altura);
+    tdIMC.textContent = imc;
+
+    pesoEsValido = true;
+    alturaEsValida = true;
+
+    if (peso <= 0 || peso >= 1000){
+        console.log("peso incorrecto");
+        tdIMC.textContent = "peso incorrecto";
+        pesoEsValido = false;
+        paciente.classList.add("dato-incorrecto");
+    }
+
+    if (altura <= 0 || altura >= 2.5){
+        console.log("altura incorrecta");
+        tdIMC.textContent = "altura incorrecta";
+        alturaEsValida = false;
+        paciente.classList.add("dato-incorrecto");
+    }
+
+    if ((pesoEsValido && alturaEsValida) == true){
+        var imc = peso/(altura * altura);
+        tdIMC.textContent = imc.toFixed(2);
+    }
+    
+}
+

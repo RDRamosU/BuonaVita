@@ -1,0 +1,3 @@
+Link API de los pacientes:
+
+ https://alura-es-cursos.github.io/api-pacientes/pacientes.json
