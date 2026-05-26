@@ -86,7 +86,7 @@ BuonaVita/
 No requiere instalación ni dependencias. Clona el repositorio y sirve los archivos con un servidor local:
 
 ```bash
-git clone https://github.com/RDRamosU/BuonaVita.git
+git clone https://github.com/RDRamosU/Buena-Vida-Nutricion
 cd BuonaVita
 npx serve .
 ```
