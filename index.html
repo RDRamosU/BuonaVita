@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buena Vida Nutrición</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <h1 class="logo">🥗 Buena Vida Nutrición</h1>
+            <p class="tagline">Pequeños hábitos que marcan la diferencia</p>
+        </div>
+    </header>
+
+    <!-- NAV -->
+    <nav>
+        <div class="container">
+            <a href="#alimentacion">Alimentación</a>
+            <a href="#recetas">Recetas</a>
+            <a href="#consejos">Consejos</a>
+        </div>
+    </nav>
+
+    <!-- ALIMENTACIÓN -->
+    <section id="alimentacion">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Alimentación</h2>
+                <p class="section-desc">Conoce los grupos alimenticios y sus beneficios.</p>
+            </div>
+
+            <!-- BÚSQUEDA -->
+            <div class="search-wrap">
+                <input type="text" id="search-input" placeholder="Buscar alimento..." autocomplete="off" />
+            </div>
+
+            <!-- FILTROS -->
+            <div class="filters">
+                <button class="filter-btn active" data-categoria="todos">Todos</button>
+                <button class="filter-btn" data-categoria="fruta">Frutas</button>
+                <button class="filter-btn" data-categoria="verdura">Verduras</button>
+                <button class="filter-btn" data-categoria="proteina">Proteínas</button>
+                <button class="filter-btn" data-categoria="cereal">Cereales</button>
+            </div>
+
+            <!-- GRID DE ALIMENTOS -->
+            <div id="alimentos-grid" class="cards-grid"></div>
+
+        </div>
+    </section>
+
+    <!-- RECETAS -->
+    <section id="recetas" class="section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Recetas Saludables</h2>
+                <p class="section-desc">Fáciles de preparar y nutritivas.</p>
+            </div>
+            <div id="recetas-grid" class="recetas-grid"></div>
+        </div>
+    </section>
+
+    <!-- CONSEJOS -->
+    <section id="consejos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Consejos Nutricionales</h2>
+                <p class="section-desc">Pequeños hábitos que marcan la diferencia.</p>
+            </div>
+            <div id="consejos-grid" class="consejos-grid"></div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>© 2026 Buena Vida Nutrición — Ruben Dario</p>
+        </div>
+    </footer>
+
+    <script type="module" src="app.js"></script>
+
+</body>
+
+</html>
